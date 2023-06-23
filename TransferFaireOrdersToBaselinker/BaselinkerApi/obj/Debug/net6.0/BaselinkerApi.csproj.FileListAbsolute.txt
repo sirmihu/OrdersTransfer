@@ -1,0 +1,12 @@
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\bin\Debug\net6.0\BaselinkerApi.deps.json
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\bin\Debug\net6.0\BaselinkerApi.dll
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\bin\Debug\net6.0\BaselinkerApi.pdb
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\obj\Debug\net6.0\BaselinkerApi.csproj.AssemblyReference.cache
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\obj\Debug\net6.0\BaselinkerApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\obj\Debug\net6.0\BaselinkerApi.AssemblyInfoInputs.cache
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\obj\Debug\net6.0\BaselinkerApi.AssemblyInfo.cs
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\obj\Debug\net6.0\BaselinkerApi.csproj.CoreCompileInputs.cache
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\obj\Debug\net6.0\BaselinkerApi.dll
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\obj\Debug\net6.0\refint\BaselinkerApi.dll
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\obj\Debug\net6.0\BaselinkerApi.pdb
+E:\OrdersTransfer\TransferFaireOrdersToBaselinker\BaselinkerApi\obj\Debug\net6.0\ref\BaselinkerApi.dll
