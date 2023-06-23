@@ -16,22 +16,27 @@ namespace TransferFaireOrdersToBaselinker
     {
         private readonly IFaireApi _faireApi;
         private readonly IBaselinkerApi _baselinkerApi;
+        private readonly string _faireApiToken;
+        private readonly string _baselinkerApiToken;
 
         public TransferFaireOrdersToBaselinker(IFaireApi faireApi, IBaselinkerApi baselinkerApi)
         {
             _faireApi = faireApi;
             _baselinkerApi = baselinkerApi;
+            _faireApiToken = Environment.GetEnvironmentVariable("FaireApiToken", EnvironmentVariableTarget.Process);
+            _baselinkerApiToken = Environment.GetEnvironmentVariable("BaselinkerApiToken", EnvironmentVariableTarget.Process);
         }
 
         [FunctionName("TransferFaireOrdersToBaselinker")]
         public async Task Run([TimerTrigger("* * * * *")]TimerInfo myTimer, ILogger log)
         {
-            var faireOrders = await _faireApi.GetAllOrders();
+            var faireOrders = await _faireApi.GetAllOrders(_faireApiToken);
             var faireOrdersInBaselinker = (await _baselinkerApi.GetOrders(
                 new GetOrdersRequest
                 {
                     FilterOrderSourceId = 1024
-                })).Orders;
+                }, _baselinkerApiToken)).Orders;
+
 
             foreach (var faireOrder in faireOrders)
             {
@@ -68,7 +73,7 @@ namespace TransferFaireOrdersToBaselinker
                         Name = item.ProductName,
 
                     }).ToList()
-                });
+                }, _baselinkerApiToken);
             }
 
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");

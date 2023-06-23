@@ -12,18 +12,16 @@ namespace FaireApi
 {
     public class FaireApi : IFaireApi
     {
-        private readonly string _token;
         private readonly int _maxOrdersLimitPerPage;
         private readonly IFaireApiHttpClient _faireApiHttpClient;
 
-        public FaireApi(IFaireApiHttpClient faireApiHttpClient, IOptions<FaireApiSettings> options)
+        public FaireApi(IFaireApiHttpClient faireApiHttpClient)
         {
             _faireApiHttpClient = faireApiHttpClient;
-            _token = options.Value.Token;
             _maxOrdersLimitPerPage = 50;
         }
 
-        public async Task<IEnumerable<Order>> GetAllOrders()
+        public async Task<IEnumerable<Order>> GetAllOrders(string token)
         {
             var page = 1;
             var orders = new List<Order>();
@@ -32,7 +30,7 @@ namespace FaireApi
             {
                 var path = $"{FaireApiUrl.GetAllOrders}?limit={_maxOrdersLimitPerPage}&page={page}";
                 
-                var getAllOrdersResponse = await _faireApiHttpClient.GetAsync<GetAllOrdersResponse>(path, _token)
+                var getAllOrdersResponse = await _faireApiHttpClient.GetAsync<GetAllOrdersResponse>(path, token)
                     ?? throw new FaireApiException($"Orders response was null, page: {page}");
 
                 orders.AddRange(getAllOrdersResponse.Orders);

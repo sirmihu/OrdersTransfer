@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "skLgfjrcHm/rZMVJEXHoAm6LxDgVqf3sBID2fvtSHk+u4Rv/Ew4mZDyXtKWEtKTYTOz09xYx6V5HAY235RHhIQ==",
+  "dgSpecHash": "mwRlUU9/8kGgnAbTi4/ViQMj8LJDliZ7+XodhrJLBhW/hTQNboeMO3Jqq71TQg1VGY2OTaoPg7/KHoyryLSyvA==",
   "success": true,
-  "projectFilePath": "/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/BaselinkerApi/BaselinkerApi.csproj",
+  "projectFilePath": "D:\\azure\\OrdersTransfer\\TransferFaireOrdersToBaselinker\\BaselinkerApi\\BaselinkerApi.csproj",
   "expectedPackageFiles": [
-    "/Users/adamp/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "/Users/adamp/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "/Users/adamp/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "/Users/adamp/.nuget/packages/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg.sha512",
-    "/Users/adamp/.nuget/packages/restsharp/109.0.1/restsharp.109.0.1.nupkg.sha512",
-    "/Users/adamp/.nuget/packages/restsharp.newtonsoft.json/1.5.1/restsharp.newtonsoft.json.1.5.1.nupkg.sha512",
-    "/Users/adamp/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\Adam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Adam\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Adam\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Adam\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\Adam\\.nuget\\packages\\restsharp\\109.0.1\\restsharp.109.0.1.nupkg.sha512",
+    "C:\\Users\\Adam\\.nuget\\packages\\restsharp.newtonsoft.json\\1.5.1\\restsharp.newtonsoft.json.1.5.1.nupkg.sha512",
+    "C:\\Users\\Adam\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
