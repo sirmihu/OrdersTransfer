@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "0DnL9zhVmwTl7kIyQxzHdTju0LrZxQrzpaK0a91j2fJd/L86yP8ij3C8ulIC1K4yvqDdd6pYq8gfquSJbxuI4A==",
+  "success": true,
+  "projectFilePath": "/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/BaselinkerApi/BaselinkerApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/adamp/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/restsharp/110.2.0/restsharp.110.2.0.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/system.text.json/7.0.2/system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,29 +1,58 @@
 ﻿<Properties StartupConfiguration="{178D0CBB-C122-4EBB-8915-9EF3612C23C5}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <Breakpoint file="/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/FaireApi.Tests/FaireApiUnitTests.cs" relfile="FaireApi.Tests/FaireApiUnitTests.cs" line="32" column="1" />
+    <Breakpoint file="/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/Test/FaireApiTests.cs" relfile="Test/FaireApiTests.cs" line="39" column="1" />
+    <Breakpoint file="/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/Test/FaireApiTests.cs" relfile="Test/FaireApiTests.cs" line="56" column="1" />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="FaireApi/FaireApi.cs">
+  <MonoDevelop.Ide.ItemProperties.BaselinkerApi.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test/FaireApiTests.cs">
     <Files>
-      <File FileName="TransferFaireOrdersToBaselinker/TransferFaireOrdersToBaselinker.cs" Line="15" Column="6" />
-      <File FileName="TransferFaireOrdersToBaselinker/.gitignore" Line="35" Column="17" />
-      <File FileName="FaireApi/Requests/GetAllOrdersRequest.cs" Line="14" Column="1" />
-      <File FileName="FaireApi/Responses/GetAllOrdersResponse.cs" Line="14" Column="1" />
-      <File FileName="FaireApi/Models/Order.cs" Line="15" Column="41" />
-      <File FileName="FaireApi/Models/Address.cs" Line="13" Column="29" />
-      <File FileName="FaireApi/Models/Item.cs" Line="21" Column="1" />
-      <File FileName="FaireApi/Models/PayoutCosts.cs" Line="12" Column="1" />
-      <File FileName="FaireApi/Models/FaireApiUrl.cs" Line="11" Column="1" />
-      <File FileName="FaireApi/FaireApi.cs" Line="11" Column="1" />
+      <File FileName="FaireApi/Models/Address.cs" Line="23" Column="28" />
+      <File FileName="FaireApi/Models/Item.cs" Line="30" Column="39" />
+      <File FileName="FaireApi/Models/PayoutCosts.cs" Line="15" Column="47" />
+      <File FileName="TransferFaireOrdersToBaselinker/local.settings.json" Line="1" Column="1" />
+      <File FileName="TransferFaireOrdersToBaselinker/TransferFaireOrdersToBaselinker.cs" Line="18" Column="1" />
+      <File FileName="TransferFaireOrdersToBaselinker/host.json" Line="1" Column="1" />
+      <File FileName="TransferFaireOrdersToBaselinker/.gitignore" Line="1" Column="1" />
+      <File FileName="TransferFaireOrdersToBaselinker/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Test/Utils/FaireApiHttpClient.cs" Line="36" Column="1" />
+      <File FileName="FaireApi/Exceptions/FaireApiException.cs" Line="11" Column="1" />
+      <File FileName="FaireApi/IFaireApi.cs" Line="9" Column="2" />
+      <File FileName="Test/UnitTest1.cs" Line="91" Column="2" />
+      <File FileName="Test/Test.csproj" Line="8" Column="5" />
+      <File FileName="Test/Usings.cs" Line="1" Column="1" />
+      <File FileName="FaireApi/Settings/FaireApiUrl.cs" Line="11" Column="1" />
+      <File FileName="FaireApi/FaireApi.cs" Line="40" Column="50" NotebookId="1" />
+      <File FileName="FaireApi/Models/Order.cs" Line="24" Column="23" NotebookId="1" />
+      <File FileName="FaireApi/Settings/FaireApiSettings.cs" Line="5" Column="3" NotebookId="1" />
+      <File FileName="Test/TestData/FaireGetAllOrdersResponse.json" Line="91" Column="4" NotebookId="1" />
+      <File FileName="FaireApi/Responses/GetAllOrdersResponse.cs" Line="6" Column="1" NotebookId="1" />
+      <File FileName="Test/TestData/FaireGetAllOrdersReturns51Orders.json" Line="2141" Column="34" NotebookId="1" />
+      <File FileName="FaireApi/Utils/IFaireApiHttpClient.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TransferFaireOrdersToBaselinker" expanded="True">
             <Node name="FaireApi" expanded="True">
-              <Node name="FaireApi.cs" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="FaireApi.Tests" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+              <Node name="FaireApiTests.cs" selected="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="TransferFaireOrdersToBaselinker" expanded="True" />
         </State>
       </Pad>
     </Pads>
