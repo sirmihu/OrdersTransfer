@@ -24,7 +24,7 @@ namespace TransferFaireOrdersToBaselinker
         }
 
         [FunctionName("TransferFaireOrdersToBaselinker")]
-        public async Task Run([TimerTrigger("*/10 * * * *")]TimerInfo myTimer, ILogger log)
+        public async Task Run([TimerTrigger("* * * * *")]TimerInfo myTimer, ILogger log)
         {
             var faireOrders = await _faireApi.GetAllOrders();
             var faireOrdersInBaselinker = (await _baselinkerApi.GetOrders(

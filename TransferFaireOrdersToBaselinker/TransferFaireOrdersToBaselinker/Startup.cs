@@ -18,17 +18,17 @@ namespace TransferFaireOrdersToBaselinker
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            //builder.Services.AddOptions<FaireApiSettings>()
-            //.Configure<IConfiguration>((settings, configuration) =>
-            //{
-            //    configuration.GetSection("FaireApiSettings").Bind(settings);
-            //});
+            builder.Services.AddOptions<FaireApiSettings>()
+            .Configure<IConfiguration>((settings, configuration) =>
+            {
+                configuration.GetSection("FaireApiSettings").Bind(settings);
+            });
 
-            //builder.Services.AddOptions<BaselinkerApiSettings>()
-            //.Configure<IConfiguration>((settings, configuration) =>
-            //{
-            //    configuration.GetSection("BaselinkerApiSettings").Bind(settings);
-            //});
+            builder.Services.AddOptions<BaselinkerApiSettings>()
+            .Configure<IConfiguration>((settings, configuration) =>
+            {
+                configuration.GetSection("BaselinkerApiSettings").Bind(settings);
+            });
 
             builder.Services.AddTransient<IFaireApiHttpClient, FaireApiHttpClient>();
             builder.Services.AddTransient<FaireApiNs.IFaireApi, FaireApiNs.FaireApi>();

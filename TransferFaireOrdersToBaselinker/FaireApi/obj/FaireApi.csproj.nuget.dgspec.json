@@ -40,7 +40,7 @@
           "dependencies": {
             "Microsoft.Extensions.Options": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.0, )"
             },
             "RestSharp.Serializers.NewtonsoftJson": {
               "target": "Package",

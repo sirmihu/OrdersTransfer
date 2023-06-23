@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BEfrFPG/XQANIPzA6nL7v8MO8w+88LHncCHFNlRx8B++D4SsvvRRcMdpslE0SBiDlHm3gjvmfdae1MTrDMyzAg==",
+  "dgSpecHash": "VUXj9jACUkgcQ0a0GByZ7m2nPN9336y1aVZ7bpluM3Gam3HIbrSrtOtkiVugvAXbSTrpMSIp9FtS2PfKBrvB2g==",
   "success": true,
   "projectFilePath": "/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/FaireApi/FaireApi.csproj",
   "expectedPackageFiles": [
-    "/Users/adamp/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "/Users/adamp/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
-    "/Users/adamp/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/adamp/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/Users/adamp/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/adamp/.nuget/packages/restsharp/110.2.0/restsharp.110.2.0.nupkg.sha512",
     "/Users/adamp/.nuget/packages/restsharp.serializers.newtonsoftjson/110.2.0/restsharp.serializers.newtonsoftjson.110.2.0.nupkg.sha512",
