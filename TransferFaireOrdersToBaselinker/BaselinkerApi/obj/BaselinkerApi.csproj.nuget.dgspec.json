@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\OrdersTransfer\\TransferFaireOrdersToBaselinker\\BaselinkerApi\\BaselinkerApi.csproj": {}
+    "/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/BaselinkerApi/BaselinkerApi.csproj": {}
   },
   "projects": {
-    "E:\\OrdersTransfer\\TransferFaireOrdersToBaselinker\\BaselinkerApi\\BaselinkerApi.csproj": {
+    "/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/BaselinkerApi/BaselinkerApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\OrdersTransfer\\TransferFaireOrdersToBaselinker\\BaselinkerApi\\BaselinkerApi.csproj",
+        "projectUniqueName": "/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/BaselinkerApi/BaselinkerApi.csproj",
         "projectName": "BaselinkerApi",
-        "projectPath": "E:\\OrdersTransfer\\TransferFaireOrdersToBaselinker\\BaselinkerApi\\BaselinkerApi.csproj",
-        "packagesPath": "C:\\Users\\ThinkPad T430\\.nuget\\packages\\",
-        "outputPath": "E:\\OrdersTransfer\\TransferFaireOrdersToBaselinker\\BaselinkerApi\\obj\\",
+        "projectPath": "/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/BaselinkerApi/BaselinkerApi.csproj",
+        "packagesPath": "/Users/adamp/.nuget/packages/",
+        "outputPath": "/Users/adamp/Projects/OrdersTransfer/OrdersTransfer/TransferFaireOrdersToBaselinker/BaselinkerApi/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\VisualStudioSet\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPad T430\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/adamp/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }

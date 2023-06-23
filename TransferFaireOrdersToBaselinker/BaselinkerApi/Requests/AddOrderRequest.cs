@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BaselinkerApi.Requests
 {
-    public class AddOrder
+    public class AddOrderRequest
     {
         [JsonPropertyName("order_status_id")]
         public int OrderStatusId { get; set; }

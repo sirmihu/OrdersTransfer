@@ -7,48 +7,44 @@ using RestSharp.Authenticators;
 using System.Threading;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using BaselinkerApi.Utils;
+using BaselinkerApi.Exceptions;
 
 namespace BaselinkerService
 {
     public class BaselinkerApi : IBaselinkerApi
     {
-        private readonly string _baseApiAddressUrl;
         private readonly string _token;
-        private readonly RestClient _restClient;
+        private readonly IBaselinkerHttpClient _baselinkerHttpClient;
 
-        public BaselinkerApi(IOptions<BaselinkerApiSettings> options)
+        public BaselinkerApi(IBaselinkerHttpClient baselinkerHttpClient, IOptions<BaselinkerApiSettings> options)
         {
-            _baseApiAddressUrl = options.Value.BaseApiAddressUrl;
+            _baselinkerHttpClient = baselinkerHttpClient;
             _token = options.Value.Token;
-            _restClient = new RestClient(new RestClientOptions(_baseApiAddressUrl));
         }
 
-        public async Task<AddOrderResponse> AddOrder()
+        public async Task<AddOrderResponse> AddOrder(AddOrderRequest request)
         {
-            var restRequest = new RestRequest($"{BaselinkerApiUrlMethods.AddOrder}");
-            restRequest.AddHeader("Authorization", $"Bearer {_token}");
-            var response = await _restClient.PostAsync(restRequest);
-
-            if (response.IsSuccessStatusCode)
+            try
             {
-                var addOrderResponse = JsonConvert.DeserializeObject<AddOrderResponse>(response.Content);
-                return addOrderResponse;
+                return await _baselinkerHttpClient.PostAsync<AddOrderRequest, AddOrderResponse>(request, BaselinkerApiUrl.AddOrder, _token);
             }
-            else
+            catch (Exception ex)
             {
-                throw new Exception(response.ErrorMessage);
+                throw new BaselinkerApiException(ex.Message);
             }
         }
 
-
-
-        public async Task<List<Order>> GetOrders()
+        public async Task<GetOrdersResponse> GetOrders(GetOrdersRequest request)
         {
-            var restRequest = new RestRequest($"{BaselinkerApiUrlMethods.GetOrders}");
-            restRequest.AddHeader("Authorization", $"Bearer {_token}");
-            var response = await _restClient.GetAsync<List<Order>>(restRequest);
-
-            return response;
+            try
+            {
+                return await _baselinkerHttpClient.PostAsync<GetOrdersRequest, GetOrdersResponse>(request, BaselinkerApiUrl.GetOrders, _token);
+            }
+            catch (Exception ex)
+            {
+                throw new BaselinkerApiException(ex.Message);
+            }
         }
     }
 }
