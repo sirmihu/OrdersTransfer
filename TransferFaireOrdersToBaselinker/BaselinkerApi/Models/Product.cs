@@ -38,4 +38,16 @@ namespace BaselinkerApi.Models
         [JsonPropertyName("weight")]
         public float Weight { get; set; }
     }
+
+    public class GetOrdersProduct : Product
+    {
+        [JsonPropertyName("bundle_id")]
+        public int BundleId { get; set; }
+
+        [JsonPropertyName("order_product_id")]
+        public int OrderProductId { get; set; }
+
+        [JsonPropertyName("auction_id")]
+        public int AuctionId { get; set; }
+    }
 }

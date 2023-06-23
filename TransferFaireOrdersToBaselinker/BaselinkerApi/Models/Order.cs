@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using BaselinkerApi.Responses;
 
 namespace BaselinkerApi.Models
 {
@@ -116,6 +117,6 @@ namespace BaselinkerApi.Models
         [JsonPropertyName("pack_state")]
         public int PackState { get; set; }
         [JsonPropertyName("products")]
-        public List<Product> Products { get; set; }
+        public List<GetOrdersProduct> Products { get; set; }
     }
 }

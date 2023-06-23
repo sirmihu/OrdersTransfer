@@ -13,12 +13,6 @@ namespace BaselinkerApi.Responses
         [JsonPropertyName("status")]
         public string Status { get; set; }
         [JsonPropertyName("orders")]
-        public List<GetOrdersProduct> Orders { get; set; }
-    }
-
-    public class GetOrdersProduct : Product
-    {
-        [JsonPropertyName("bundle_id")]
-        public int BundleId { get; set; }
+        public List<Order> Orders { get; set; }
     }
 }

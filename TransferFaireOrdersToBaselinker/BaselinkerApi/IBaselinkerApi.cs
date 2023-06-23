@@ -2,7 +2,7 @@
 using BaselinkerApi.Requests;
 using BaselinkerApi.Responses;
 
-namespace BaselinkerService
+namespace BaselinkerApi
 {
     public interface IBaselinkerApi
     {

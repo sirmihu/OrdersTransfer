@@ -7,11 +7,11 @@ using RestSharp;
 
 namespace BaselinkerApi.Utils
 {
-    public class BaselinkerHttpClient : IBaselinkerHttpClient
+    public class BaselinkerApiHttpClient : IBaselinkerApiHttpClient
     {
         private readonly RestClient _restClient;
 
-        public BaselinkerHttpClient()
+        public BaselinkerApiHttpClient()
         {
             _restClient = new RestClient(new RestClientOptions(BaselinkerApiUrl.BaseApiAddressUrl));
         }

@@ -10,14 +10,14 @@ using Newtonsoft.Json;
 using BaselinkerApi.Utils;
 using BaselinkerApi.Exceptions;
 
-namespace BaselinkerService
+namespace BaselinkerApi
 {
     public class BaselinkerApi : IBaselinkerApi
     {
         private readonly string _token;
-        private readonly IBaselinkerHttpClient _baselinkerHttpClient;
+        private readonly IBaselinkerApiHttpClient _baselinkerHttpClient;
 
-        public BaselinkerApi(IBaselinkerHttpClient baselinkerHttpClient, IOptions<BaselinkerApiSettings> options)
+        public BaselinkerApi(IBaselinkerApiHttpClient baselinkerHttpClient, IOptions<BaselinkerApiSettings> options)
         {
             _baselinkerHttpClient = baselinkerHttpClient;
             _token = options.Value.Token;
@@ -27,7 +27,10 @@ namespace BaselinkerService
         {
             try
             {
-                return await _baselinkerHttpClient.PostAsync<AddOrderRequest, AddOrderResponse>(request, BaselinkerApiUrl.AddOrder, _token);
+                var response = await _baselinkerHttpClient.PostAsync<AddOrderRequest, AddOrderResponse>(request, BaselinkerApiUrl.AddOrder, _token)
+                    ?? throw new BaselinkerApiException("AddOrder response was null.");
+
+                return response;
             }
             catch (Exception ex)
             {
@@ -39,7 +42,10 @@ namespace BaselinkerService
         {
             try
             {
-                return await _baselinkerHttpClient.PostAsync<GetOrdersRequest, GetOrdersResponse>(request, BaselinkerApiUrl.GetOrders, _token);
+                var response =  await _baselinkerHttpClient.PostAsync<GetOrdersRequest, GetOrdersResponse>(request, BaselinkerApiUrl.GetOrders, _token)
+                    ?? throw new BaselinkerApiException("GetOrders response was null.");
+
+                return response;
             }
             catch (Exception ex)
             {
