@@ -3,7 +3,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.FaireApi FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="FaireApi/FaireApi.cs">
     <Files>
       <File FileName="TransferFaireOrdersToBaselinker/TransferFaireOrdersToBaselinker.cs" Line="15" Column="6" />
@@ -29,7 +28,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FaireApi.Tests FirstBuild="True" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.TransferFaireOrdersToBaselinker FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.TransferFaireOrdersToBaselinker PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

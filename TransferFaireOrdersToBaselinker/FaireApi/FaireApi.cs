@@ -14,10 +14,11 @@ namespace FaireApi
         private readonly string _baseApiAddressUrl;
         private readonly string _token;
         private readonly int _maxOrdersLimitPerPage;
-        private readonly RestClient _restClient;
+        private readonly IRestClient _restClient;
 
-        public FaireApi(IOptions<FaireApiSettings> options)
+        public FaireApi(IRestClient restClient, IOptions<FaireApiSettings> options)
         {
+            _restClient = restClient;
             _baseApiAddressUrl = options.Value.BaseApiAddressUrl;
             _token = options.Value.Token;
             _maxOrdersLimitPerPage = 50;
