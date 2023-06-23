@@ -42,9 +42,13 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
-            "RestSharp.Serializers.NewtonsoftJson": {
+            "RestSharp": {
               "target": "Package",
-              "version": "[110.2.0, )"
+              "version": "[109.0.1, )"
+            },
+            "RestSharp.Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[1.5.1, )"
             }
           },
           "imports": [
