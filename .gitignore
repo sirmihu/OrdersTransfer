@@ -1,3 +1,5 @@
 OrdersTransfer/.vs/
 bin/
 obj/
+OrdersTransfer/TransferFaireOrdersToBaselinker/BaselinkerApi/bin/
+OrdersTransfer/TransferFaireOrdersToBaselinker/BaselinkerApi/obj/
