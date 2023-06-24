@@ -1,8 +1,5 @@
-﻿using System;
-using FaireApi.Exceptions;
+﻿using FaireApi.Exceptions;
 using FaireApi.Models;
-using FaireApi.Responses;
-using Newtonsoft.Json.Linq;
 using RestSharp;
 
 namespace FaireApi.Utils

@@ -1,5 +1,4 @@
-﻿using System;
-using FaireApi.Models;
+﻿using FaireApi.Models;
 using Newtonsoft.Json;
 
 namespace FaireApi.Responses

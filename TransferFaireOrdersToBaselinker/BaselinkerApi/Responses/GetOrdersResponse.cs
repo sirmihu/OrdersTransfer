@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-using BaselinkerApi.Models;
+﻿using BaselinkerApi.Models;
+using Newtonsoft.Json;
 
 namespace BaselinkerApi.Responses
 {
     public class GetOrdersResponse
     {
-        [JsonPropertyName("status")]
+        [JsonProperty("status")]
         public string Status { get; set; }
-        [JsonPropertyName("orders")]
+        [JsonProperty("orders")]
         public List<Order> Orders { get; set; }
     }
 }

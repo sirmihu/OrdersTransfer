@@ -1,12 +1,7 @@
-﻿using System;
-using System.Threading;
-using FaireApi.Exceptions;
+﻿using FaireApi.Exceptions;
 using FaireApi.Models;
 using FaireApi.Responses;
-using FaireApi.Settings;
 using FaireApi.Utils;
-using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
 
 namespace FaireApi
 {

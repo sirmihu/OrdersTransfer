@@ -1,15 +1,14 @@
-﻿using System;
-using System.Text.Json.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace BaselinkerApi.Responses
 {
 	public class ErrorResponse
 	{
-        [JsonPropertyName("status")]
+        [JsonProperty("status")]
         public string Status { get; set; }
-        [JsonPropertyName("error_code")]
+        [JsonProperty("error_code")]
         public string ErrorCode { get; set; }
-        [JsonPropertyName("error_message")]
+        [JsonProperty("error_message")]
         public string ErrorMessage { get; set; }
 	}
 }

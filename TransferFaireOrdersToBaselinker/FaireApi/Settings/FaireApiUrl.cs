@@ -1,5 +1,4 @@
-﻿using System;
-namespace FaireApi.Models
+﻿namespace FaireApi.Models
 {
 	public class FaireApiUrl
 	{

@@ -1,5 +1,4 @@
-﻿using System;
-namespace FaireApi.Settings
+﻿namespace FaireApi.Settings
 {
 	public class FaireApiSettings
 	{
