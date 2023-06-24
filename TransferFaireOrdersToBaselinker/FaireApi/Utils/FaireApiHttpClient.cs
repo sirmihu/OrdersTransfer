@@ -1,8 +1,5 @@
-﻿using System;
-using FaireApi.Exceptions;
+﻿using FaireApi.Exceptions;
 using FaireApi.Models;
-using FaireApi.Responses;
-using Newtonsoft.Json.Linq;
 using RestSharp;
 
 namespace FaireApi.Utils
@@ -21,7 +18,7 @@ namespace FaireApi.Utils
             try
             {
                 var request = new RestRequest(path);
-                request.AddHeader("Authorization", $"Bearer {token}");
+                request.AddHeader("X-FAIRE-ACCESS-TOKEN", token);
 
                 return await _restClient.GetAsync<T>(request);
             }

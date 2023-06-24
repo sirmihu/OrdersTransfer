@@ -1,20 +1,17 @@
-﻿using System.Xml.Linq;
-using BaselinkerApi;
-using BaselinkerApi.Exceptions;
+﻿using BaselinkerApi.Exceptions;
 using BaselinkerApi.Models;
 using BaselinkerApi.Requests;
 using BaselinkerApi.Responses;
 using BaselinkerApi.Settings;
 using BaselinkerApi.Utils;
-using Microsoft.Extensions.Options;
 using Moq;
+using Xunit;
 
 namespace BaselinkerApi.Tests;
 
 public class BaselinkerApiTests
 {
     private readonly BaselinkerApi _baseLinkerApi;
-    private readonly Mock<IOptions<BaselinkerApiSettings>> _mockOptions;
     private readonly Mock<IBaselinkerApiHttpClient> _mockBaselinkerApiHttpClient;
     private readonly string _token;
 
@@ -22,10 +19,8 @@ public class BaselinkerApiTests
     {
         _token = "testToken";
         _mockBaselinkerApiHttpClient = new Mock<IBaselinkerApiHttpClient>();
-        _mockOptions = new Mock<IOptions<BaselinkerApiSettings>>();
-        _mockOptions.Setup(p => p.Value).Returns(new BaselinkerApiSettings { Token = _token });
 
-        _baseLinkerApi = new BaselinkerApi(_mockBaselinkerApiHttpClient.Object, _mockOptions.Object);
+        _baseLinkerApi = new BaselinkerApi(_mockBaselinkerApiHttpClient.Object);
     }
 
     [Fact]
@@ -78,7 +73,7 @@ public class BaselinkerApiTests
             .ReturnsAsync(expectedResponse);
 
         // Act
-        var result = await _baseLinkerApi.AddOrder(request);
+        var result = await _baseLinkerApi.AddOrder(request, _token);
 
         // Assert
         Assert.Equal(result, expectedResponse);
@@ -96,7 +91,7 @@ public class BaselinkerApiTests
         };
 
         // Act & Assert
-        await Assert.ThrowsAsync<BaselinkerApiException>(async () => await _baseLinkerApi.AddOrder(request));
+        await Assert.ThrowsAsync<BaselinkerApiException>(async () => await _baseLinkerApi.AddOrder(request, _token));
     }
 
     [Fact]
@@ -159,7 +154,7 @@ public class BaselinkerApiTests
             .ReturnsAsync(expectedResponse);
 
         // Act
-        var result = await _baseLinkerApi.GetOrders(request);
+        var result = await _baseLinkerApi.GetOrders(request, _token);
 
         // Assert
         Assert.Equal(result, expectedResponse);
@@ -175,6 +170,6 @@ public class BaselinkerApiTests
         };
 
         // Act & Assert
-        await Assert.ThrowsAsync<BaselinkerApiException>(async () => await _baseLinkerApi.GetOrders(request));
+        await Assert.ThrowsAsync<BaselinkerApiException>(async () => await _baseLinkerApi.GetOrders(request, _token));
     }
 }

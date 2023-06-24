@@ -6,8 +6,6 @@ using FaireApi.Utils;
 using Microsoft.Extensions.Options;
 using Moq;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using RestSharp;
 using Xunit;
 
 namespace FaireApi.Tests;
@@ -28,7 +26,7 @@ public class FaireApiTests
         _mockOptions.Setup(p => p.Value).Returns(new FaireApiSettings { Token = _token });
         _maxOrdersLimitPerPage = 50;
 
-        _faireApi = new FaireApi(_mockFaireApiHttpClient.Object, _mockOptions.Object);
+        _faireApi = new FaireApi(_mockFaireApiHttpClient.Object);
     }
 
     [Theory]
@@ -41,11 +39,11 @@ public class FaireApiTests
             .ReturnsAsync(testOrders);
 
         // Act
-        var allOrders = await _faireApi.GetAllOrders();
+        var allOrders = await _faireApi.GetAllOrders(_token);
 
         // Assert
         Assert.NotEmpty(allOrders);
-        Assert.Equal(testOrders.Orders.Count(), allOrders.Count());
+        Assert.Equal(testOrders.Orders?.Count(), allOrders.Count());
     }
 
     [Theory]
@@ -55,7 +53,7 @@ public class FaireApiTests
         // Arrange
         var firstPageOrders = PrepareTestGetAllOrdersResponse(firstPageResponsePath);
         var secondPageOrders = PrepareTestGetAllOrdersResponse(secondPageResponsePath);
-        var testOrders = firstPageOrders.Orders.Union(secondPageOrders.Orders);
+        var testOrders = firstPageOrders.Orders?.Union(secondPageOrders.Orders);
 
         var firstPagePath = $"{FaireApiUrl.GetAllOrders}?limit={_maxOrdersLimitPerPage}&page=1";
         var secondPagePath = $"{FaireApiUrl.GetAllOrders}?limit={_maxOrdersLimitPerPage}&page=2";
@@ -66,18 +64,18 @@ public class FaireApiTests
             .ReturnsAsync(secondPageOrders);
 
         // Act
-        var allOrders = await _faireApi.GetAllOrders();
+        var allOrders = await _faireApi.GetAllOrders(_token);
 
         // Assert
         Assert.NotEmpty(allOrders);
-        Assert.Equal(testOrders.Count(), allOrders.Count());
+        Assert.Equal(testOrders?.Count(), allOrders?.Count());
     }
 
     [Fact]
     public async Task GetAllOrders_Throws_FaireApiException_When_ErrorOnFaireApiSide()
     {
         // Act & Assert
-        await Assert.ThrowsAsync<FaireApiException>(async () => await _faireApi.GetAllOrders());
+        await Assert.ThrowsAsync<FaireApiException>(async () => await _faireApi.GetAllOrders(_token));
     }
 
     private GetAllOrdersResponse PrepareTestGetAllOrdersResponse(string filePath)

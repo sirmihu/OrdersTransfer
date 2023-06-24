@@ -4,6 +4,6 @@ namespace FaireApi
 {
     public interface IFaireApi
     {
-        Task<IEnumerable<Order>> GetAllOrders();
+        Task<IEnumerable<Order>> GetAllOrders(string token);
     }
 }

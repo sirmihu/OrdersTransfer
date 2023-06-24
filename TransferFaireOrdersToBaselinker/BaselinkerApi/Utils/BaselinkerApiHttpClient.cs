@@ -1,5 +1,4 @@
-﻿using System;
-using BaselinkerApi.Exceptions;
+﻿using BaselinkerApi.Exceptions;
 using BaselinkerApi.Responses;
 using BaselinkerApi.Settings;
 using Newtonsoft.Json;
