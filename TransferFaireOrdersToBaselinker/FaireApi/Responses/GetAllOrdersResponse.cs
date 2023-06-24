@@ -10,7 +10,7 @@ namespace FaireApi.Responses
         [JsonProperty("limit")]
         public int Limit { get; set; }
         [JsonProperty("orders")]
-        public List<Order> Orders { get; set; }
+        public List<Order>? Orders { get; set; }
     }
 }
 

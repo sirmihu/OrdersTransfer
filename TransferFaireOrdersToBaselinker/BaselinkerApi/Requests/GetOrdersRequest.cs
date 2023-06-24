@@ -19,9 +19,9 @@ namespace BaselinkerApi.Requests
         [JsonProperty("status_id")]
         public int StatusId { get; set; }
         [JsonProperty("filter_email")]
-        public string FilterEmail { get; set; }
+        public string? FilterEmail { get; set; }
         [JsonProperty("filter_order_source")]
-        public string FilterOrderSource { get; set; }
+        public string? FilterOrderSource { get; set; }
         [JsonProperty("filter_order_source_id")]
         public int FilterOrderSourceId { get; set; }
     }

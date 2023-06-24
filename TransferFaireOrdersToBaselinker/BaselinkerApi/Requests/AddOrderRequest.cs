@@ -12,76 +12,76 @@ namespace BaselinkerApi.Requests
         [JsonProperty("date_add")]
         public int DateAdd { get; set; }
         [JsonProperty("currency")]
-        public string Currency { get; set; }
+        public string? Currency { get; set; }
         [JsonProperty("payment_method")]
-        public string PaymentMethod { get; set; }
+        public string? PaymentMethod { get; set; }
         [JsonProperty("payment_method_cod")]
         public bool PaymentMethodCod { get; set; }
         [JsonProperty("paid")]
         public bool Paid { get; set; }
         [JsonProperty("user_comments")]
-        public string UserComments { get; set; }
+        public string? UserComments { get; set; }
         [JsonProperty("admin_comments")]
-        public string AdminComments { get; set; }
+        public string? AdminComments { get; set; }
         [JsonProperty("email")]
-        public string Email { get; set; }
+        public string? Email { get; set; }
         [JsonProperty("phone")]
-        public string Phone { get; set; }
+        public string? Phone { get; set; }
         [JsonProperty("user_login")]
-        public string UserLogin { get; set; }
+        public string? UserLogin { get; set; }
         [JsonProperty("delivery_method")]
-        public string DeliveryMethod { get; set; }
+        public string? DeliveryMethod { get; set; }
         [JsonProperty("delivery_price")]
         public float DeliveryPrice { get; set; }
         [JsonProperty("delivery_fullname")]
-        public string DeliveryFullname { get; set; }
+        public string? DeliveryFullname { get; set; }
         [JsonProperty("delivery_company")]
-        public string DeliveryCompany { get; set; }
+        public string? DeliveryCompany { get; set; }
         [JsonProperty("delivery_address")]
-        public string DeliveryAddress { get; set; }
+        public string? DeliveryAddress { get; set; }
         [JsonProperty("delivery_postcode")]
-        public string DeliveryPostcode { get; set; }
+        public string? DeliveryPostcode { get; set; }
         [JsonProperty("delivery_city")]
-        public string DeliveryCity { get; set; }
+        public string? DeliveryCity { get; set; }
         [JsonProperty("delivery_state")]
-        public string DeliveryState { get; set; }
+        public string? DeliveryState { get; set; }
         [JsonProperty("delivery_country_code")]
-        public string DeliveryCountryCode { get; set; }
+        public string? DeliveryCountryCode { get; set; }
         [JsonProperty("delivery_point_id")]
-        public string DeliveryPointId { get; set; }
+        public string? DeliveryPointId { get; set; }
         [JsonProperty("delivery_point_name")]
-        public string DeliveryPointName { get; set; }
+        public string? DeliveryPointName { get; set; }
         [JsonProperty("delivery_point_address")]
-        public string DeliveryPointAddress { get; set; }
+        public string? DeliveryPointAddress { get; set; }
         [JsonProperty("delivery_point_postcode")]
-        public string DeliveryPointPostcode { get; set; }
+        public string? DeliveryPointPostcode { get; set; }
         [JsonProperty("delivery_point_city")]
-        public string DeliveryPointCity { get; set; }
+        public string? DeliveryPointCity { get; set; }
         [JsonProperty("invoice_fullname")]
-        public string InvoiceFullname { get; set; }
+        public string? InvoiceFullname { get; set; }
         [JsonProperty("invoice_company")]
-        public string InvoiceCompany { get; set; }
+        public string? InvoiceCompany { get; set; }
         [JsonProperty("invoice_nip")]
-        public string InvoiceNip { get; set; }
+        public string? InvoiceNip { get; set; }
         [JsonProperty("invoice_address")]
-        public string InvoiceAddress { get; set; }
+        public string? InvoiceAddress { get; set; }
         [JsonProperty("invoice_postcode")]
-        public string InvoicePostcode { get; set; }
+        public string? InvoicePostcode { get; set; }
         [JsonProperty("invoice_city")]
-        public string InvoiceCity { get; set; }
+        public string? InvoiceCity { get; set; }
         [JsonProperty("invoice_state")]
-        public string InvoiceState { get; set; }
+        public string? InvoiceState { get; set; }
         [JsonProperty("invoice_country_code")]
-        public string InvoiceCountryCode { get; set; }
+        public string? InvoiceCountryCode { get; set; }
         [JsonProperty("want_invoice")]
         public bool WantInvoice { get; set; }
         [JsonProperty("extra_field_1")]
-        public string ExtraField1 { get; set; }
+        public string? ExtraField1 { get; set; }
         [JsonProperty("extra_field_2")]
-        public string ExtraField2 { get; set; }
+        public string? ExtraField2 { get; set; }
         [JsonProperty("custom_extra_fields")]
-        public Dictionary<object, object> CustomExtraFields { get; set; }
+        public Dictionary<object, object>? CustomExtraFields { get; set; }
         [JsonProperty("products")]
-        public List<Product> Products { get; set; }
+        public List<Product>? Products { get; set; }
     }
 }

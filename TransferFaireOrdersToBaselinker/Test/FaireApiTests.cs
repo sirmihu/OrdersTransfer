@@ -43,7 +43,7 @@ public class FaireApiTests
 
         // Assert
         Assert.NotEmpty(allOrders);
-        Assert.Equal(testOrders.Orders.Count(), allOrders.Count());
+        Assert.Equal(testOrders.Orders?.Count(), allOrders.Count());
     }
 
     [Theory]
@@ -53,7 +53,7 @@ public class FaireApiTests
         // Arrange
         var firstPageOrders = PrepareTestGetAllOrdersResponse(firstPageResponsePath);
         var secondPageOrders = PrepareTestGetAllOrdersResponse(secondPageResponsePath);
-        var testOrders = firstPageOrders.Orders.Union(secondPageOrders.Orders);
+        var testOrders = firstPageOrders.Orders?.Union(secondPageOrders.Orders);
 
         var firstPagePath = $"{FaireApiUrl.GetAllOrders}?limit={_maxOrdersLimitPerPage}&page=1";
         var secondPagePath = $"{FaireApiUrl.GetAllOrders}?limit={_maxOrdersLimitPerPage}&page=2";
@@ -68,7 +68,7 @@ public class FaireApiTests
 
         // Assert
         Assert.NotEmpty(allOrders);
-        Assert.Equal(testOrders.Count(), allOrders.Count());
+        Assert.Equal(testOrders?.Count(), allOrders?.Count());
     }
 
     [Fact]

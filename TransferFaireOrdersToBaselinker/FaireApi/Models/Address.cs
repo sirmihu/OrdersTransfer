@@ -6,27 +6,27 @@ namespace FaireApi.Models
     public class Address
     {
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [JsonProperty("address1")]
-        public string Address1 { get; set; }
+        public string? Address1 { get; set; }
         [JsonProperty("address2")]
-        public string Address2 { get; set; }
+        public string? Address2 { get; set; }
         [JsonProperty("postal_code")]
-        public string PostalCode { get; set; }
+        public string? PostalCode { get; set; }
         [JsonProperty("city")]
-        public string City { get; set; }
+        public string? City { get; set; }
         [JsonProperty("state")]
-        public string State { get; set; }
+        public string? State { get; set; }
         [JsonProperty("state_code")]
-        public string StateCode { get; set; }
+        public string? StateCode { get; set; }
         [JsonProperty("phone_number")]
-        public string PhoneNumber { get; set; }
+        public string? PhoneNumber { get; set; }
         [JsonProperty("country")]
-        public string Country { get; set; }
+        public string? Country { get; set; }
         [JsonProperty("country_code")]
-        public string CountryCode { get; set; }
+        public string? CountryCode { get; set; }
         [JsonProperty("company_name")]
-        public string CompanyName { get; set; }
+        public string? CompanyName { get; set; }
     }
 }
 

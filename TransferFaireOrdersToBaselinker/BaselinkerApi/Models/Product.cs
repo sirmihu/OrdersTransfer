@@ -5,25 +5,25 @@ namespace BaselinkerApi.Models
     public class Product
     {
         [JsonProperty("storage")]
-        public string Storage { get; set; }
+        public string? Storage { get; set; }
         [JsonProperty("storage_id")]
         public int StorageId { get; set; }
         [JsonProperty("product_id")]
-        public string ProductId { get; set; }
+        public string? ProductId { get; set; }
         [JsonProperty("variant_id")]
         public int VariantId { get; set; }
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [JsonProperty("sku")]
-        public string Sku { get; set; }
+        public string? Sku { get; set; }
         [JsonProperty("ean")]
-        public string Ean { get; set; }
+        public string? Ean { get; set; }
         [JsonProperty("location")]
-        public string Location { get; set; }
+        public string? Location { get; set; }
         [JsonProperty("warehouse_id")]
         public int WarehouseId { get; set; }
         [JsonProperty("attributes")]
-        public string Attributes { get; set; }
+        public string? Attributes { get; set; }
         [JsonProperty("price_brutto")]
         public float PriceBrutto { get; set; }
         [JsonProperty("tax_rate")]

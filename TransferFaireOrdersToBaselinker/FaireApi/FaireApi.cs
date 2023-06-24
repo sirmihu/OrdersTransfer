@@ -26,7 +26,10 @@ namespace FaireApi
                 var path = $"{FaireApiUrl.GetAllOrders}?limit={_maxOrdersLimitPerPage}&page={page}";
                 
                 var getAllOrdersResponse = await _faireApiHttpClient.GetAsync<GetAllOrdersResponse>(path, token)
-                    ?? throw new FaireApiException($"Orders response was null, page: {page}");
+                    ?? throw new FaireApiException($"GetAllOrders response was null, page: {page}");
+
+                if (getAllOrdersResponse.Orders == null)
+                    throw new FaireApiException($"Faire orders were null, page: {page}");
 
                 orders.AddRange(getAllOrdersResponse.Orders);
 
